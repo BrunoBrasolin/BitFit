@@ -1,0 +1,150 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  background-color: #e6eaed;
+  text-rendering: optimizeLegibility;
+}
+
+#navbar {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0.8rem;
+  color: #7FDBFF;
+  background-color: black;
+}
+#navbar .navbar-link {
+  color: white;
+  margin-top: 0;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  vertical-align: middle;
+}
+#navbar .navbar-link:hover {
+  color: grey;
+}
+#navbar .navbar-brand {
+  margin-left: 1%;
+  font-size: 200%;
+  text-shadow: 2px 2px black;
+}
+#navbar .navbar-link {
+  margin-left: 2%;
+}
+#navbar img {
+  height: 2.5rem;
+}
+
+#intro {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/intro_image.jpg") center/cover no-repeat;
+}
+#intro img {
+  right: 0;
+  padding-top: 4.5%;
+  padding-left: 56.5%;
+  height: 24%;
+}
+
+#unidades {
+  position: relative;
+  background-color: white;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+#unidades .unidade {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 0.2%;
+}
+#unidades .unidade .overlay {
+  align-items: center;
+}
+#unidades .unidade .overlay a {
+  opacity: 0;
+  transition: 0.5s ease;
+  text-align: center;
+}
+#unidades .unidade .overlay img {
+  transition: 0.5s ease;
+  border: 1px black solid;
+  height: 13rem;
+  margin-right: 1%;
+}
+#unidades .unidade .overlay:hover a {
+  opacity: 1;
+}
+#unidades .unidade .overlay:hover img {
+  opacity: 0.3;
+}
+#unidades .unidade .informacoes {
+  margin-left: 4%;
+}
+#unidades .unidade .informacoes h2 {
+  text-align: center;
+}
+#unidades .unidade .informacoes table {
+  text-align: center;
+}
+
+#planos {
+  width: 100%;
+  height: 50%;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+#planos #plano_1,
+#planos #plano_2 {
+  border: 1px solid black;
+  margin: 5%;
+  padding: 1%;
+  padding-top: 0.1%;
+  transition: 0.5s ease;
+}
+#planos #plano_1 {
+  background-color: #7FDBFF;
+}
+#planos #plano_1:hover {
+  background-color: #6fc2e3;
+}
+#planos #plano_2 {
+  border-top: 3px solid black;
+}
+#planos h1 {
+  font-family: "Berkshire Swash", Helvetica, sans-serif;
+  font-size: 200%;
+  text-align: center;
+  margin: 0;
+  padding: 5%;
+}
+#planos ul li {
+  font-family: "Lobster Two", Helvetica, sans-serif;
+  font-size: 100%;
+}
+#planos .contrate {
+  text-align: center;
+  text-decoration: none;
+  padding: 2%;
+  font-weight: bold;
+  color: black;
+  background-color: #7FDBFF;
+  border: 0.02px solid black;
+  text-transform: uppercase;
+  border-radius: 5%;
+  transition: 0.5s ease;
+}
+#planos .contrate:hover {
+  background-color: #6fc2e3;
+}
+#planos hr {
+  height: 0;
+  border: 0.5px solid black;
+}
+
+/*# sourceMappingURL=style.css.map */
