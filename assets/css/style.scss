@@ -1,7 +1,11 @@
 $blue: #7FDBFF;
 $darkblue: #6fc2e3;
-$grey: black;
+$yellow: #fffd7f;
+$darkyellow: #dfe36f;
+$black: black;
 $transition: .5s ease;
+$box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2),
+0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 html,
 body {
@@ -20,7 +24,7 @@ body {
     width: 100%;
     padding: .8rem;
     color: $blue;
-    background-color: $grey;
+    background-color: $black;
 
     .navbar-link {
         color: white;
@@ -73,35 +77,19 @@ body {
     grid-template-columns: auto auto;
 
     .unidade {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        box-shadow: $box-shadow;
         margin: .2%;
 
-        .overlay {
-            align-items: center;
+        img {
+            transition: $transition;
+            border: 1px black solid;
+            height: 13rem;
+            margin-right: 1%;
 
-            a {
-                opacity: 0;
-                transition: $transition;
-                text-align: center;
-            }
-
-            img {
-                transition: $transition;
-                border: 1px black solid;
-                height: 13rem;
-                margin-right: 1%;
-            }
-
-            &:hover a {
-                opacity: 1;
-            }
-
-            &:hover img {
+            &:hover {
                 opacity: .3;
             }
         }
-
-
 
         .informacoes {
             margin-left: 4%;
@@ -123,61 +111,74 @@ body {
     display: grid;
     grid-template-columns: auto auto;
 
-    #plano_1,
-    #plano_2 {
+    .plano {
+        width: 40%;
+        // height: 100%;
         border: 1px solid black;
         margin: 5%;
         padding: 1%;
         padding-top: .1%;
         transition: $transition;
+
+        h1 {
+            font-family: 'Berkshire Swash', Helvetica, sans-serif;
+            font-size: 200%;
+            text-align: center;
+            margin: 0;
+            padding: 5%;
+        }
+
+        ul li {
+            font-family: 'Lobster Two', Helvetica, sans-serif;
+            font-size: 100%;
+            margin: 1%;
+        }
+
+        .contrate {
+            text-decoration: none;
+            padding: 2%;
+            font-weight: bold;
+            color: black;
+            background-color: red;
+            border: .02px solid $black;
+            text-transform: uppercase;
+            border-radius: 5%;
+            transition: $transition;
+            margin-left: auto;
+            margin-right: auto;
+
+            &:hover {
+                background-color: $darkblue;
+            }
+        }
+
+        hr {
+            height: 0;
+            border: .5px solid $black;
+        }
     }
 
     #plano_1 {
+        border-top: 3px solid $darkblue;
+        margin-right: 0;
         background-color: $blue;
 
         &:hover {
             background-color: $darkblue;
+            border-top: 3px solid $blue;
+            box-shadow: $box-shadow;
         }
     }
 
     #plano_2 {
-        border-top: 3px solid $grey;
-    }
-
-    h1 {
-        font-family: 'Berkshire Swash', Helvetica, sans-serif;
-        font-size: 200%;
-        text-align: center;
-        margin: 0;
-        padding: 5%;
-    }
-
-    ul {
-        li {
-            font-family: 'Lobster Two', Helvetica, sans-serif;
-            font-size: 100%;
-        }
-    }
-
-    .contrate {
-        text-align: center;
-        text-decoration: none;
-        padding: 2%;
-        font-weight: bold;
-        color: black;
-        background-color: $blue;
-        border: .02px solid $grey;
-        text-transform: uppercase;
-        border-radius: 5%;
-        transition: $transition;
+        margin-left: 0;
+        border-top: 3px solid $darkyellow;
+        background-color: $yellow;
 
         &:hover {
-            background-color: $darkblue;
+            background-color: $darkyellow;
+            border-top: 3px solid $yellow;
+            box-shadow: $box-shadow;
         }
-    }
-
-    hr {
-        height: 0;
-        border: .5px solid $grey;
     }
 }

@@ -63,24 +63,13 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin: 0.2%;
 }
-#unidades .unidade .overlay {
-  align-items: center;
-}
-#unidades .unidade .overlay a {
-  opacity: 0;
-  transition: 0.5s ease;
-  text-align: center;
-}
-#unidades .unidade .overlay img {
+#unidades .unidade img {
   transition: 0.5s ease;
   border: 1px black solid;
   height: 13rem;
   margin-right: 1%;
 }
-#unidades .unidade .overlay:hover a {
-  opacity: 1;
-}
-#unidades .unidade .overlay:hover img {
+#unidades .unidade img:hover {
   opacity: 0.3;
 }
 #unidades .unidade .informacoes {
@@ -99,52 +88,65 @@ body {
   display: grid;
   grid-template-columns: auto auto;
 }
-#planos #plano_1,
-#planos #plano_2 {
+#planos .plano {
+  width: 40%;
   border: 1px solid black;
   margin: 5%;
   padding: 1%;
   padding-top: 0.1%;
   transition: 0.5s ease;
 }
-#planos #plano_1 {
-  background-color: #7FDBFF;
-}
-#planos #plano_1:hover {
-  background-color: #6fc2e3;
-}
-#planos #plano_2 {
-  border-top: 3px solid black;
-}
-#planos h1 {
+#planos .plano h1 {
   font-family: "Berkshire Swash", Helvetica, sans-serif;
   font-size: 200%;
   text-align: center;
   margin: 0;
   padding: 5%;
 }
-#planos ul li {
+#planos .plano ul li {
   font-family: "Lobster Two", Helvetica, sans-serif;
   font-size: 100%;
+  margin: 1%;
 }
-#planos .contrate {
-  text-align: center;
+#planos .plano .contrate {
   text-decoration: none;
   padding: 2%;
   font-weight: bold;
   color: black;
-  background-color: #7FDBFF;
+  background-color: red;
   border: 0.02px solid black;
   text-transform: uppercase;
   border-radius: 5%;
   transition: 0.5s ease;
+  margin-left: auto;
+  margin-right: auto;
 }
-#planos .contrate:hover {
+#planos .plano .contrate:hover {
   background-color: #6fc2e3;
 }
-#planos hr {
+#planos .plano hr {
   height: 0;
   border: 0.5px solid black;
+}
+#planos #plano_1 {
+  border-top: 3px solid #6fc2e3;
+  margin-right: 0;
+  background-color: #7FDBFF;
+}
+#planos #plano_1:hover {
+  background-color: #6fc2e3;
+  border-top: 3px solid #7FDBFF;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#planos #plano_2 {
+  margin-left: 0;
+  border-top: 3px solid #dfe36f;
+  background-color: #fffd7f;
+}
+#planos #plano_2:hover {
+  background-color: #dfe36f;
+  border-top: 3px solid #fffd7f;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /*# sourceMappingURL=style.css.map */

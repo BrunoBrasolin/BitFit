@@ -1,0 +1,2 @@
+cd OneDrive/Documentos/Projetos/Web/BitFit/assets/css
+sass --watch style.scss:style.css
