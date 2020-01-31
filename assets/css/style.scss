@@ -1,5 +1,6 @@
-$blue: #7FDBFF;
-$darkblue: #6fc2e3;
+$body-color: #e6eaed;
+$blue: #1f4ce0;
+$darkblue: #1c42bd;
 $yellow: #fffd7f;
 $darkyellow: #dfe36f;
 $black: black;
@@ -13,7 +14,7 @@ body {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    background-color: #e6eaed;
+    background-color: $body-color;
     text-rendering: optimizeLegibility;
 }
 
@@ -70,6 +71,46 @@ body {
     }
 }
 
+#exclusividades {
+    display: grid;
+    height: 75%;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    background-image: linear-gradient(to bottom, $body-color, #9db3fc, $body-color);
+    padding: 1%;
+
+
+    .exclusividades {
+        padding: 2%;
+        justify-self: center;
+        align-self: center;
+        margin-top: 5%;
+        transition: $transition;
+
+
+        .exclusividades-header {
+            font-size: 150%;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .exclusividades-body {
+            text-align: center;
+        }
+
+        .exclusividades-icons {
+            width: 100%;
+            text-align: center;
+            color: $blue;
+        }
+
+        &:hover {
+            transition: $transition;
+            box-shadow: 0 4px 8px 0 rgba(31, 76, 224, 0.5), 0 6px 20px 0 rgba(31, 76, 224, 0.3);
+        }
+    }
+}
+
 #unidades {
     position: relative;
     background-color: white;
@@ -110,12 +151,14 @@ body {
     height: 50%;
     display: grid;
     grid-template-columns: auto auto;
+    // align-items: center;
+    // justify-items: center;
 
     .plano {
-        width: 40%;
-        // height: 100%;
+        width: 300px;
+        height: 300px;
         border: 1px solid black;
-        margin: 5%;
+        margin: 25%;
         padding: 1%;
         padding-top: .1%;
         transition: $transition;
@@ -144,8 +187,6 @@ body {
             text-transform: uppercase;
             border-radius: 5%;
             transition: $transition;
-            margin-left: auto;
-            margin-right: auto;
 
             &:hover {
                 background-color: $darkblue;
@@ -160,8 +201,9 @@ body {
 
     #plano_1 {
         border-top: 3px solid $darkblue;
-        margin-right: 0;
         background-color: $blue;
+        justify-self: end;
+        margin-right: 5%;
 
         &:hover {
             background-color: $darkblue;
@@ -171,9 +213,10 @@ body {
     }
 
     #plano_2 {
-        margin-left: 0;
+        margin-left: 5%;
         border-top: 3px solid $darkyellow;
         background-color: $yellow;
+        justify-self: start;
 
         &:hover {
             background-color: $darkyellow;
