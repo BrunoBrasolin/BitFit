@@ -1,6 +1,9 @@
 html,
 body {
   height: 100%;
+  width: 100%;
+  min-height: 100%;
+  min-width: 100%;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
@@ -66,7 +69,7 @@ body {
   justify-self: center;
   align-self: center;
   margin-top: 5%;
-  transition: 0.5s ease;
+  transition: 0.3s ease;
 }
 #exclusividades .exclusividades .exclusividades-header {
   font-size: 150%;
@@ -82,7 +85,7 @@ body {
   color: #1f4ce0;
 }
 #exclusividades .exclusividades:hover {
-  transition: 0.5s ease;
+  transition: 0.3s ease;
   box-shadow: 0 4px 8px 0 rgba(31, 76, 224, 0.5), 0 6px 20px 0 rgba(31, 76, 224, 0.3);
 }
 
@@ -93,13 +96,14 @@ body {
   width: 100%;
 }
 #unidades .unidade {
+  background-color: white;
   box-shadow: 0 4px 8px 0 rgba(31, 76, 224, 0.5), 0 6px 20px 0 rgba(31, 76, 224, 0.3);
   height: 13rem;
-  transition: 0.5s ease;
+  transition: 0.3s ease;
   margin: 2%;
 }
 #unidades .unidade img {
-  transition: 0.5s ease;
+  transition: 0.3s ease;
   height: 13rem;
   margin-right: 1%;
 }
@@ -109,30 +113,31 @@ body {
 #unidades .unidade .informacoes h2 {
   font-style: 150%;
   text-align: center;
-  transition: 0.5s ease;
+  transition: 0.3s ease;
+  margin: 1%;
 }
 #unidades .unidade .informacoes table {
   text-align: center;
 }
 #unidades .unidade:hover {
-  transition: 0.5s ease;
+  transition: 0.3s ease;
   box-shadow: 0 4px 8px 0 #1f4ce0, 0 6px 20px 0 #1f4ce0;
 }
 
 #planos {
   width: 100%;
-  height: 50%;
   display: grid;
   grid-template-columns: auto auto;
 }
 #planos .plano {
-  width: 300px;
+  background-color: white;
+  width: 20rem;
   height: 300px;
   border: 1px solid black;
-  margin: 25%;
+  margin: 3rem;
   padding: 1%;
   padding-top: 0.1%;
-  transition: 0.5s ease;
+  transition: 0.3s ease;
 }
 #planos .plano h1 {
   font-family: "Berkshire Swash", Helvetica, sans-serif;
@@ -155,7 +160,7 @@ body {
   border: 0.02px solid black;
   text-transform: uppercase;
   border-radius: 5%;
-  transition: 0.5s ease;
+  transition: 0.3s ease;
 }
 #planos .plano .contrate:hover {
   background-color: #1c42bd;
@@ -165,26 +170,20 @@ body {
   border: 0.5px solid black;
 }
 #planos #plano_1 {
-  border-top: 3px solid #1c42bd;
-  background-color: #1f4ce0;
-  justify-self: end;
-  margin-right: 5%;
+  margin-left: 50%;
+  box-shadow: 5px 10px 18px #9db3fc;
 }
 #planos #plano_1:hover {
-  background-color: #1c42bd;
-  border-top: 3px solid #1f4ce0;
-  box-shadow: 0 4px 8px 0 rgba(31, 76, 224, 0.5), 0 6px 20px 0 rgba(31, 76, 224, 0.3);
+  transition: 0.3s ease;
+  box-shadow: 5px 10px 18px #1f4ce0;
 }
 #planos #plano_2 {
-  margin-left: 5%;
-  border-top: 3px solid #dfe36f;
-  background-color: #fffd7f;
-  justify-self: start;
+  margin-right: 50%;
+  box-shadow: 5px 10px 18px #f9fc9d;
 }
 #planos #plano_2:hover {
-  background-color: #dfe36f;
-  border-top: 3px solid #fffd7f;
-  box-shadow: 0 4px 8px 0 rgba(31, 76, 224, 0.5), 0 6px 20px 0 rgba(31, 76, 224, 0.3);
+  box-shadow: 5px 10px 18px #eef50f;
+  transition: 0.3s ease;
 }
 
 /*# sourceMappingURL=style.css.map */
