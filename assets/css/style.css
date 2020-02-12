@@ -26,7 +26,7 @@ body {
   font-weight: bold;
   text-decoration: none;
   position: relative;
-  vertical-align: middle;
+  vertical-align: super;
 }
 #navbar .navbar-link:hover {
   color: grey;
@@ -72,6 +72,7 @@ body {
   transition: 0.3s ease;
 }
 #exclusividades .exclusividades .exclusividades-header {
+  font-family: "Lobster Two", Helvetica, sans-serif;
   font-size: 150%;
   text-decoration: none;
   text-align: center;
@@ -125,6 +126,7 @@ body {
 }
 
 #planos {
+  margin-top: 3rem;
   width: 100%;
   display: grid;
   grid-template-columns: auto auto;
@@ -146,6 +148,9 @@ body {
   margin: 0;
   padding: 5%;
 }
+#planos .plano ul {
+  margin-bottom: 10%;
+}
 #planos .plano ul li {
   font-family: "Lobster Two", Helvetica, sans-serif;
   font-size: 100%;
@@ -153,17 +158,18 @@ body {
 }
 #planos .plano .contrate {
   text-decoration: none;
+  width: 40%;
+  margin-left: 25%;
+  margin-right: 25%;
   padding: 2%;
   font-weight: bold;
   color: black;
-  background-color: red;
-  border: 0.02px solid black;
+  background-color: #ccd8ff;
   text-transform: uppercase;
   border-radius: 5%;
-  transition: 0.3s ease;
-}
-#planos .plano .contrate:hover {
-  background-color: #1c42bd;
+  transition: 0.7s ease;
+  text-align: center;
+  margin-top: 10%;
 }
 #planos .plano hr {
   height: 0;
@@ -173,17 +179,31 @@ body {
   margin-left: 50%;
   box-shadow: 5px 10px 18px #9db3fc;
 }
+#planos #plano_1 .contrate {
+  background-color: #ccd8ff;
+}
 #planos #plano_1:hover {
-  transition: 0.3s ease;
+  transition: 0.7s ease;
   box-shadow: 5px 10px 18px #1f4ce0;
+  background-color: #ccd8ff;
+}
+#planos #plano_1:hover .contrate {
+  background-color: #1f4ce0;
 }
 #planos #plano_2 {
   margin-right: 50%;
-  box-shadow: 5px 10px 18px #f9fc9d;
+  box-shadow: 5px 10px 18px #fbfc9d;
+}
+#planos #plano_2 .contrate {
+  background-color: #feffcc;
 }
 #planos #plano_2:hover {
-  box-shadow: 5px 10px 18px #eef50f;
-  transition: 0.3s ease;
+  box-shadow: 5px 10px 18px #e3e020;
+  background-color: #feffcc;
+  transition: 0.7s ease;
+}
+#planos #plano_2:hover .contrate {
+  background-color: #e3e020;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,10 +1,13 @@
 $body-color: #e6eaed;
-$blue: rgb(31, 76, 224);
-$darkblue: #1c42bd;
-$yellow: #f9fc9d;
-$darkyellow: #dfe36f;
+$lightblue: #ccd8ff;
+$blue: #9db3fc;
+$darkblue: #1f4ce0;
+$lightyellow: #feffcc;
+$yellow: #fbfc9d;
+$darkyellow: #e3e020;
 $black: black;
-$transition: .3s ease;
+$fasttransition: .3s ease;
+$slowtransition: .7s ease;
 $box-shadow:0 4px 8px 0 rgba(31, 76, 224, 0.5),
 0 6px 20px 0 rgba(31, 76, 224, 0.3);
 
@@ -27,7 +30,7 @@ body {
     top: 0;
     width: 100%;
     padding: .8rem;
-    color: $blue;
+    color: $darkblue;
     background-color: $black;
 
     .navbar-link {
@@ -36,7 +39,7 @@ body {
         font-weight: bold;
         text-decoration: none;
         position: relative;
-        vertical-align: middle;
+        vertical-align: super;
 
         &:hover {
             color: grey;
@@ -79,7 +82,7 @@ body {
     height: 75%;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
-    background-image: linear-gradient(to bottom, $body-color, #9db3fc, $body-color);
+    background-image: linear-gradient(to bottom, $body-color, $blue, $body-color);
     padding: 1%;
 
 
@@ -88,10 +91,11 @@ body {
         justify-self: center;
         align-self: center;
         margin-top: 5%;
-        transition: $transition;
+        transition: $fasttransition;
 
 
         .exclusividades-header {
+            font-family: 'Lobster Two', Helvetica, sans-serif;
             font-size: 150%;
             text-decoration: none;
             text-align: center;
@@ -104,11 +108,11 @@ body {
         .exclusividades-icons {
             width: 100%;
             text-align: center;
-            color: $blue;
+            color: $darkblue;
         }
 
         &:hover {
-            transition: $transition;
+            transition: $fasttransition;
             box-shadow: $box-shadow;
         }
     }
@@ -124,11 +128,11 @@ body {
         background-color: white;
         box-shadow: $box-shadow;
         height: 13rem;
-        transition: $transition;
+        transition: $fasttransition;
         margin: 2%;
 
         img {
-            transition: $transition;
+            transition: $fasttransition;
             height: 13rem;
             margin-right: 1%;
         }
@@ -139,7 +143,7 @@ body {
             h2 {
                 font-style: 150%;
                 text-align: center;
-                transition: $transition;
+                transition: $fasttransition;
                 margin: 1%;
             }
 
@@ -149,7 +153,7 @@ body {
         }
 
         &:hover {
-            transition: $transition;
+            transition: $fasttransition;
             box-shadow: 0 4px 8px 0 rgba(31, 76, 224, 2),
                 0 6px 20px 0 rgba(31, 76, 224, 2);
         }
@@ -157,6 +161,7 @@ body {
 }
 
 #planos {
+    margin-top: 3rem;
     width: 100%;
     display: grid;
     grid-template-columns: auto auto;
@@ -169,7 +174,7 @@ body {
         margin: 3rem;
         padding: 1%;
         padding-top: .1%;
-        transition: $transition;
+        transition: $fasttransition;
 
         h1 {
             font-family: 'Berkshire Swash', Helvetica, sans-serif;
@@ -179,26 +184,30 @@ body {
             padding: 5%;
         }
 
-        ul li {
-            font-family: 'Lobster Two', Helvetica, sans-serif;
-            font-size: 100%;
-            margin: 1%;
+        ul {
+            margin-bottom: 10%;
+
+            li {
+                font-family: 'Lobster Two', Helvetica, sans-serif;
+                font-size: 100%;
+                margin: 1%;
+            }
         }
 
         .contrate {
             text-decoration: none;
+            width: 40%;
+            margin-left: 25%;
+            margin-right: 25%;
             padding: 2%;
             font-weight: bold;
             color: black;
-            background-color: red;
-            border: .02px solid $black;
+            background-color: $lightblue;
             text-transform: uppercase;
             border-radius: 5%;
-            transition: $transition;
-
-            &:hover {
-                background-color: $darkblue;
-            }
+            transition: $slowtransition;
+            text-align: center;
+            margin-top: 10%;
         }
 
         hr {
@@ -209,22 +218,43 @@ body {
 
     #plano_1 {
         margin-left: 50%;
-        box-shadow: 5px 10px 18px #9db3fc;
+        box-shadow: 5px 10px 18px $blue;
+
+        .contrate {
+            background-color: $lightblue;
+        }
 
         &:hover {
-            transition: $transition;
-            box-shadow: 5px 10px 18px $blue;
+            transition: $slowtransition;
+            box-shadow: 5px 10px 18px $darkblue;
+            background-color: $lightblue;
+
+            .contrate {
+                background-color: $darkblue;
+            }
         }
+
+
     }
 
     #plano_2 {
         margin-right: 50%;
         box-shadow: 5px 10px 18px $yellow;
 
-        &:hover {
-            box-shadow: 5px 10px 18px #eef50f;
-            transition: $transition;
+        .contrate {
+            background-color: $lightyellow;
         }
+
+        &:hover {
+            box-shadow: 5px 10px 18px $darkyellow;
+            background-color: $lightyellow;
+            transition: $slowtransition;
+
+            .contrate {
+                background-color: $darkyellow;
+            }
+        }
+
     }
 
 }
