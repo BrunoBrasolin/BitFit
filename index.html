@@ -8,8 +8,6 @@
   <link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="assets/css/reset.css">
-  <link rel="stylesheet" href="assets/css/all.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <script src="assets/js/all.js"></script>
   <title>BitFit</title>
@@ -25,7 +23,6 @@
     </div>
   </nav>
   <div id="intro">
-    <!-- <img src="logo.png" alt="Logo"> -->
   </div>
 
   <section id="exclusividades">
@@ -68,7 +65,10 @@
 
   <section id="unidades">
     <div class="unidade" id="mongagua">
-      <img class="imagem_unidade" src="assets/img/mongagua.jpg" alt="Academia de Mongaguá">
+      <div class="imagem">
+        <span id="mongagua-span"><a id="unidade-mongagua" href="#">Contrate</a></span>
+        <img class="imagem_unidade" src="assets/img/mongagua.jpg" alt="Academia de Mongaguá">
+      </div>
       <div class="informacoes">
         <h2>Mongaguá</h2>
         <table>
@@ -93,7 +93,10 @@
     </div>
 
     <div class="unidade" id="itanhaem">
-      <img class="imagem_unidade" src="assets/img/itanhaem.jpg" alt="Academia de Itanhaém">
+      <div class="imagem">
+        <span id="itanhaem-span"><a id="unidade-itanhaem" href="#">Contrate</a></span>
+        <img class="imagem_unidade" src="assets/img/itanhaem.jpg" alt="Academia de Itanhaém">
+      </div>
       <div class="informacoes">
         <h2>Itanhaém</h2>
         <table>
@@ -118,7 +121,10 @@
     </div>
 
     <div class="unidade" id="sao-paulo">
-      <img class="imagem_unidade" src="assets/img/sao-paulo.jpg" alt="Academia de Itanhaém">
+      <div class="imagem">
+        <span id="sao-paulo-span"><a id="unidade-sao-paulo" href="#">Contrate</a></span>
+        <img class="imagem_unidade" src="assets/img/sao-paulo.jpg" alt="Academia de Itanhaém">
+      </div>
       <div class="informacoes">
         <h2>São Paulo</h2>
         <table>
@@ -143,7 +149,10 @@
     </div>
 
     <div class="unidade" id="praia-grande">
-      <img class="imagem_unidade" src="assets/img/praia-grande.jpg" alt="Academia de Itanhaém">
+      <div class="imagem">
+        <span id="praia-grande-span"><a id="unidade-praia-grande" href="#">Contrate</a></span>
+        <img class="imagem_unidade" src="assets/img/praia-grande.jpg" alt="Academia de Itanhaém">
+      </div>
       <div class="informacoes">
         <h2>Praia Grande</h2>
         <table>
@@ -170,28 +179,86 @@
 
   <section id="planos">
     <div class="plano" id="plano_1">
-      <h1>Plano Azul</h1>
-      <hr>
-      <ul>
-        <li>A partir de 60 reais</li>
-        <li>3x na semana</li>
-        <li>3 acompanhantes no mês</li>
-      </ul>
-      <a class="contrate">Matricule-se</a>
+      <div class="plano-informacao">
+        <h1>Plano Azul</h1>
+        <hr>
+        <ul>
+          <li>A partir de 60 reais</li>
+          <li>3x na semana</li>
+          <li>3 acompanhantes no mês</li>
+        </ul>
+        <a href="#" id="contrate-plano-1" class="contrate">Matricule-se</a>
+      </div>
     </div>
+
     <div class="plano" id="plano_2">
-      <h1>Plano Amarelo</h1>
-      <hr>
-      <ul>
-        <li>A partir de 75 reais</li>
-        <li>5x na semana</li>
-        <li>5 acompanhantes no mês</li>
-        <li>Cadeira de massagem gratuita uma vez no dia</li>
-        <li>Acesso ilimitado a qualquer academia da BitFit </li>
-      </ul>
-      <a class="contrate">Matricule-se</a>
+      <div class="plano-informacao">
+        <h1>Plano Amarelo</h1>
+        <hr>
+        <ul>
+          <li>A partir de 75 reais</li>
+          <li>5x na semana</li>
+          <li>5 acompanhantes no mês</li>
+          <li>Cadeira de massagem gratuita uma vez no dia</li>
+          <li>Acesso ilimitado a qualquer academia da BitFit </li>
+        </ul>
+        <a href="#" id="contrate-plano-2" class="contrate">Matricule-se</a>
+      </div>
     </div>
   </section>
+  <form id="form-plano-2" class="form-plano">
+    <span id="close-modal">&#10005;</span>
+    <fieldset>
+      <!-- <legend>Desculpe, estamos passando por manutenção em todas as academias, logo quando voltarmos avisaremos você :)</legend> -->
+      <legend>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</legend>
+      <label for="nome">
+        <i class="fas fa-user"></i>
+        <input type="text" placeholder="Nome" name="nome" id="nome"></label>
+
+      <label for="email">
+        <i class="fas fa-envelope"></i>
+        <input type="email" placeholder="E-mail" name="email" id="nome">
+      </label>
+
+      <select name="select-unidade" id="select-unidade">
+        <option value="0" disabled selected>Escolha uma unidade</option>
+        <option value="1">Mongaguá</option>
+        <option value="2">Itanhaém</option>
+        <option value="3">São Paulo</option>
+        <option value="4">Praia Grande</option>
+      </select>
+
+      <select name="select-plano" id="select-plano">
+        <option value="0" disabled selected>Escolha um plano</option>
+        <option value="1">Plano Azul</option>
+        <option value="2">Plano Amarelo</option>
+      </select>
+      <button id="enviar-form">Enviar</button>
+    </fieldset>
+    <div id="success">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+      <div class="check">
+        <div class="checks">
+          <div class="check-left"></div>
+          <div class="check-right"></div>
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <footer>
+    <img src="assets/img/wake-logo.webp" alt="Logo Alan Wake">
+    <img src="assets/img/gym-logo.png" alt="Logo Alan Wake">
+    <img src="assets/img/snack-logo.png" alt="Logo Alan Wake">
+    <img src="assets/img/shake-logo.png" alt="Logo Alan Wake">
+    <img src="assets/img/clothing-logo.png" alt="Logo Alan Wake">
+    <div>
+      <p><i class="fas fa-envelope"></i> bitfit@contato.com.br</p>
+      <p>&copy; 2020</p>
+    </div>
+  </footer>
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/formShow.js"></script>
 </body>
 
 </html>
