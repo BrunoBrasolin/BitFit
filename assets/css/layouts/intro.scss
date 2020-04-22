@@ -7,6 +7,7 @@ body {
   scroll-behavior: smooth;
   background-color: $body-color;
   text-rendering: optimizeLegibility;
+  font-family: "Roboto";
 }
 
 #intro {
@@ -18,7 +19,7 @@ body {
 
 .form-plano {
   display: none;
-  // display: flex;
+  // display      : flex;
   position: absolute;
   color: white;
   background-color: rgba($color: #000000, $alpha: 0.9);
@@ -33,6 +34,7 @@ body {
   margin: auto;
   left: 0;
   right: 0;
+
   fieldset {
     border: none;
     font-size: 150%;
@@ -42,20 +44,24 @@ body {
     legend {
       text-align: center;
     }
+
     label,
     select,
     button {
       margin: 0.5em 0;
     }
+
     label {
       display: flex;
       border: 1px solid white;
       width: 100%;
       border-radius: 15px;
+
       svg {
         margin: 0.1em 1em;
       }
     }
+
     input,
     select,
     button {
@@ -76,8 +82,10 @@ body {
         color: black;
       }
     }
+
     option {
       z-index: 1;
+
       &:hover {
         background-color: black !important;
       }
@@ -88,6 +96,7 @@ body {
     display: none;
     width: 100%;
     height: 100%;
+
     img {
       display: block;
       margin: auto;
@@ -97,23 +106,28 @@ body {
       border: 5px solid green;
       border-radius: 100%;
     }
+
     p {
       font-size: 110%;
     }
   }
+
   #close-modal {
     cursor: pointer;
     align-self: flex-end;
   }
+
   .check {
     animation: success 1s linear;
     margin: auto;
     border-radius: 100%;
-        border: 5px solid darkgreen;
+    border: 5px solid darkgreen;
     height: 15em;
     width: 15em;
+
     .checks {
       margin-top: 4.5em;
+
       .check-left {
         display: inline-block;
         width: 1em;
@@ -121,8 +135,9 @@ body {
         margin-left: 5em;
         background-color: darkgreen;
         transform: rotate(-45deg);
-        animation: check-left 1s linear;
+        animation: check-left 0.5s linear;
       }
+
       .check-right {
         display: inline-block;
         margin-left: 1.6em;
@@ -130,7 +145,7 @@ body {
         height: 5em;
         background-color: darkgreen;
         transform: rotate(50deg);
-        animation: check-right 1s linear;
+        animation: check-right 0.5s linear;
       }
     }
   }

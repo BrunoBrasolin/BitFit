@@ -13,8 +13,8 @@
         border-radius: 5%;
 
         .exclusividades-header {
-            font-family: "Lobster Two", Helvetica, sans-serif;
-            font-size: 150%;
+            font-family: 'Roboto Slab', serif;
+            font-size: 175%;
             text-align: center;
         }
 
@@ -32,7 +32,7 @@
             box-shadow: 0 4px 8px 0 rgba(31, 76, 224, 0.5), 0 6px 20px 0 rgba(31, 76, 224, 0.3);
             animation: rotate 0.5s ease-in-out both;
             .exclusividades-icons {
-                animation: slide 0.5s ease-in-out both;
+                animation: popup 0.5s;
                 animation-delay: 0.1s;
             }
         }
