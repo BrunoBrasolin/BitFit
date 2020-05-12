@@ -1,1 +1,0 @@
-.navbar{z-index:1;height:5em;width:100%;padding:0.8rem;background-color:black;display:flex;align-items:center;justify-content:space-between}.navbar>.navbar-links{display:flex;width:25%;justify-content:space-around}.navbar>.navbar-links>.navbar-link{color:white;font-weight:bold;text-decoration:none}.navbar>.navbar-links>.navbar-link:hover{color:grey}.navbar>a>img{height:2.5rem}

@@ -1,0 +1,122 @@
+/* NAVBAR */
+header {
+  background-color: black;
+  padding: 0.8rem;
+  z-index: 1;
+  width: 100%;
+  > .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    > .navbar-links {
+      display: flex;
+      width: 25%;
+      justify-content: space-around;
+      > .navbar-link {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+
+        &:hover {
+          color: grey;
+        }
+      }
+    }
+    > a {
+      > img {
+        height: 2.5rem;
+      }
+    }
+    > .mobile {
+      display: none;
+      > .menu-btn {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 3em;
+        height: 3em;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+        border: 0.2em solid #fff;
+        > .menu-btn__burguer {
+          width: 2em;
+          height: 0.15em;
+          background-color: #fff;
+          border-radius: 5px;
+          box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+          transition: all 0.5s ease-in-out;
+          &::before,
+          &::after {
+            content: "";
+            position: absolute;
+            width: 2em;
+            height: 0.15em;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+            transition: all 0.5s ease-in-out;
+          }
+          &::before {
+            transform: translateY(-16px);
+          }
+          &::after {
+            transform: translateY(16px);
+          }
+        }
+      }
+      .menu-btn.open .menu-btn__burguer {
+        transform: translateX(-50px);
+        background: transparent;
+        box-shadow: none;
+        &::before {
+          transform: rotate(45deg) translate(35px, -35px);
+        }
+        &::after {
+          transform: rotate(-45deg) translate(35px, 35px);
+        }
+      }
+    }
+  }
+  @media screen and(max-width: 950px) {
+    > .navbar {
+      justify-content: space-around;
+      > .navbar-links {
+        display: none;
+      }
+      > .mobile {
+      display: block;
+      > .menu-btn {
+          display: flex;
+        }
+
+        > .navbar-links-mobile {
+          visibility: hidden;
+          right: 10%;
+          display: flex;
+          opacity: 0;
+          flex-direction: column;
+          align-items: center;
+          position: absolute;
+          padding: 1em;
+          background-color: black;
+          transition: 0.5s all ease-in-out;
+          > a {
+            margin: 0.5em 0;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+
+            &:hover {
+              color: grey;
+            }
+          }
+        }
+        > .navbar-links-mobile.show {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

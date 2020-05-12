@@ -1,270 +1,268 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto+Slab:wght@100&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style/style.min.css" />
+    <title>BitFit</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <link rel="shortcut icon" href="resources/img/icon.png" type="image/x-icon">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto+Slab:wght@100&family=Roboto:wght@100&display=swap"
-    rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="public/css/style.css">
-  <title>BitFit</title>
-</head>
-
-<body>
-  <nav class="navbar">
-    <a href="#intro"><img src="resources/img/logo_navbar.png" id="icon" alt="Icon"></a>
-    <div class="navbar-links">
-      <a href="#exclusividades" class="navbar-link">Exclusividades</a>
-      <a href="#unidades" class="navbar-link">Unidades</a>
-      <a href="#planos" class="navbar-link">Planos</a>
-    </div>
-
-    <div class="menu-btn">
-      <div class="menu-btn__burguer"></div>
-    </div>
-  </nav>
-
-  <div id="intro">
-  </div>
-
-  <section id="exclusividades">
-    <div class="exclusividades" id="shake">
-      <i class="exclusividades-icons fas fa-blender fa-5x"></i>
-      <p class="exclusividades-header">Shake <b>instantâneo</b></p>
-      <p class="exclusividades-body">O shake que você pedir nas barracas dentro das academias ficarão prontos em
-        questões de <b>segundos</b></p>
-    </div>
-    <div class="exclusividades" id="instagram">
-      <i class="exclusividades-icons fab fa-instagram fa-5x"></i>
-      <p class="exclusividades-header">Filtro do Instagram <b>exclusivo</b> para alunos</p>
-      <p class="exclusividades-body">Vontade de postar aquele <i>stories</i> enquanto malha? Aproveite e use nosso
-        filtro <b>exclusivo</b></p>
-    </div>
-    <div class="exclusividades" id="wifi">
-      <i class="exclusividades-icons fas fa-wifi fa-5x"></i>
-      <p class="exclusividades-header"><b>Wi-Fi</b> de alta qualidade em todo lugar da academia</p>
-      <p class="exclusividades-body">Ficar gastando dados móveis para baixar aquela série ou escutar aquela
-        música? <b>Nunca mais</b></p>
-    </div>
-    <div class="exclusividades" id="musica">
-      <i class="exclusividades-icons fab fa-spotify fa-5x"></i>
-      <p class="exclusividades-header">As músicas <b>mais tocadas</b> da atualidade</p>
-      <p class="exclusividades-body">As músicas mais tocadas no <i>Spotify</i> agora também estão em todas as
-        <i><b>BitFit's</b></i> do Brasil</p>
-    </div>
-    <div class="exclusividades" id="digital">
-      <i class="exclusividades-icons fas fa-fingerprint fa-5x"></i>
-      <p class="exclusividades-header">Entrada somente com a <b>digital</b></p>
-      <p class="exclusividades-body">Cartão pra entrar na academia? Só precisamos da sua digital para sua entrada
-      </p>
-    </div>
-    <div class="exclusividades" id="vestiario">
-      <i class="exclusividades-icons fas fa-user-lock fa-5x"></i>
-      <p class="exclusividades-header">Armário <b>exclusivo</b> para cada aluno</p>
-      <p class="exclusividades-body">Cada aluno tem seu próprio armário localizado dentro do vestiário</p>
-    </div>
-  </section>
-
-  <section id="unidades">
-    <div class="unidade" id="mongagua">
-      <div class="imagem">
-        <span id="mongagua-span"><a id="unidade-mongagua" href="#">Contrate</a></span>
-        <img class="imagem_unidade" src="resources/img/mongagua.jpg" alt="Academia de Mongaguá">
-      </div>
-      <div class="informacoes">
-        <h2>Mongaguá</h2>
-        <table>
-          <tr>
-            <th rowspan="2"><i class="far fa-clock"></i></th>
-            <th> Segunda à Sexta </th>
-            <th> Sábado </th>
-            <th> Domingo e Feriados </th>
-          </tr>
-          <tr>
-            <td> 6H - 23H59 </td>
-            <td> 9H - 18H </td>
-            <td> 10H - 16H </td>
-          </tr>
-        </table>
-        <div class="endereco">
-          <p><i class="fas fa-map-marked-alt"></i> Avenida Marina, 5000 - Centro</p>
-          <p>Mongaguá, SP - 11730-000 </p>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="#intro"
+          ><img src="img/logo_navbar.png" id="icon" alt="Icon"
+        /></a>
+        <div class="navbar-links">
+          <a href="#exclusividades" class="navbar-link">Exclusividades</a>
+          <a href="#unidades" class="navbar-link">Unidades</a>
         </div>
-        <p><i style="color: green;" class="fab fa-whatsapp"></i> (13) 12345-6789</p>
-      </div>
-    </div>
-
-    <div class="unidade" id="itanhaem">
-      <div class="imagem">
-        <span id="itanhaem-span"><a id="unidade-itanhaem" href="#">Contrate</a></span>
-        <img class="imagem_unidade" src="resources/img/itanhaem.jpg" alt="Academia de Itanhaém">
-      </div>
-      <div class="informacoes">
-        <h2>Itanhaém</h2>
-        <table>
-          <tr>
-            <th rowspan="2"><i class="far fa-clock"></i></th>
-            <th> Segunda à Sexta </th>
-            <th> Sábado </th>
-            <th> Domingo e Feriados </th>
-          </tr>
-          <tr>
-            <td> 24 HORAS </td>
-            <td> 9H - 18H </td>
-            <td> 10H - 16H </td>
-          </tr>
-        </table>
-        <div class="endereco">
-          <p><i class="fas fa-map-marked-alt"></i> Avenida Rui Barbosa, 300 - Centro</p>
-          <p>Itanhaém, SP - 11740-000 </p>
+        <div class="mobile">
+          <div class="menu-btn">
+            <div class="menu-btn__burguer"></div>
+          </div>
+          <div class="navbar-links-mobile">
+            <a href="#exclusividades" class="navbar-link">Exclusividades</a>
+            <a href="#unidades" class="navbar-link">Unidades</a>
+          </div>
         </div>
-        <p><i style="color: green;" class="fab fa-whatsapp"></i> (13) 12345-6789</p>
-      </div>
-    </div>
+      </nav>
+    </header>
+    <div id="intro"></div>
 
-    <div class="unidade" id="sao-paulo">
-      <div class="imagem">
-        <span id="sao-paulo-span"><a id="unidade-sao-paulo" href="#">Contrate</a></span>
-        <img class="imagem_unidade" src="resources/img/sao-paulo.jpg" alt="Academia de Itanhaém">
+    <section id="exclusividades">
+      <div class="exclusividades" id="shake">
+        <i class="exclusividades-icons fas fa-blender fa-5x"></i>
+        <p class="exclusividades-header">Shake <b>instantâneo</b></p>
+        <p class="exclusividades-body">
+          O shake que você pedir nas barracas dentro das academias ficarão
+          prontos em questões de <b>segundos</b>
+        </p>
       </div>
-      <div class="informacoes">
-        <h2>São Paulo</h2>
-        <table>
-          <tr>
-            <th rowspan="2"><i class="far fa-clock"></i></th>
-            <th> Segunda à Sexta </th>
-            <th> Sábado </th>
-            <th> Domingo e Feriados </th>
-          </tr>
-          <tr>
-            <td> 24 HORAS </td>
-            <td> 9H - 18H </td>
-            <td> 10H - 16H </td>
-          </tr>
-        </table>
-        <div class="endereco">
-          <p><i class="fas fa-map-marked-alt"></i> Rua Domingos de Morais, 908 - Vila Mariana</p>
-          <p>São Paulo - SP, 04010-100</p>
+      <div class="exclusividades" id="instagram">
+        <i class="exclusividades-icons fab fa-instagram fa-5x"></i>
+        <p class="exclusividades-header">
+          Filtro do Instagram <b>exclusivo</b> para alunos
+        </p>
+        <p class="exclusividades-body">
+          Vontade de postar aquele <i>stories</i> enquanto malha? Aproveite e
+          use nosso filtro <b>exclusivo</b>
+        </p>
+      </div>
+      <div class="exclusividades" id="wifi">
+        <i class="exclusividades-icons fas fa-wifi fa-5x"></i>
+        <p class="exclusividades-header">
+          <b>Wi-Fi</b> de alta qualidade em todo lugar da academia
+        </p>
+        <p class="exclusividades-body">
+          Ficar gastando dados móveis para baixar aquela série ou escutar aquela
+          música? <b>Nunca mais</b>
+        </p>
+      </div>
+      <div class="exclusividades" id="musica">
+        <i class="exclusividades-icons fab fa-spotify fa-5x"></i>
+        <p class="exclusividades-header">
+          As músicas <b>mais tocadas</b> da atualidade
+        </p>
+        <p class="exclusividades-body">
+          As músicas mais tocadas no <i>Spotify</i> agora também estão em todas
+          as <i><b>BitFit's</b></i> do Brasil
+        </p>
+      </div>
+      <div class="exclusividades" id="digital">
+        <i class="exclusividades-icons fas fa-fingerprint fa-5x"></i>
+        <p class="exclusividades-header">
+          Entrada somente com a <b>digital</b>
+        </p>
+        <p class="exclusividades-body">
+          Cartão pra entrar na academia? Só precisamos da sua digital para sua
+          entrada
+        </p>
+      </div>
+      <div class="exclusividades" id="vestiario">
+        <i class="exclusividades-icons fas fa-user-lock fa-5x"></i>
+        <p class="exclusividades-header">
+          Armário <b>exclusivo</b> para cada aluno
+        </p>
+        <p class="exclusividades-body">
+          Cada aluno tem seu próprio armário localizado dentro do vestiário
+        </p>
+      </div>
+    </section>
+
+    <section id="unidades">
+      <div class="unidade" id="mongagua">
+        <div class="imagem">
+          <img
+            class="imagem_unidade"
+            src="img/mongagua.jpg"
+            alt="Academia de Mongaguá"
+          />
         </div>
-        <p><i style="color: green;" class="fab fa-whatsapp"></i> (13) 12345-6789</p>
-      </div>
-    </div>
-
-    <div class="unidade" id="praia-grande">
-      <div class="imagem">
-        <span id="praia-grande-span"><a id="unidade-praia-grande" href="#">Contrate</a></span>
-        <img class="imagem_unidade" src="resources/img/praia-grande.jpg" alt="Academia de Itanhaém">
-      </div>
-      <div class="informacoes">
-        <h2>Praia Grande</h2>
-        <table>
-          <tr>
-            <th rowspan="2"><i class="far fa-clock"></i></th>
-            <th> Segunda à Sexta </th>
-            <th> Sábado </th>
-            <th> Domingo e Feriados </th>
-          </tr>
-          <tr>
-            <td> 24 HORAS </td>
-            <td> 9H - 18H </td>
-            <td> 10H - 16H </td>
-          </tr>
-        </table>
-        <div class="endereco">
-          <p><i class="fas fa-map-marked-alt"></i> Avenida Presidente Costa e Silva, 808 - Boqueirão</p>
-          <p>Praia Grande - SP, 11700-005</p>
-        </div>
-        <p><i style="color: green;" class="fab fa-whatsapp"></i> (13) 12345-6789</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="planos">
-    <div class="plano" id="plano_1">
-      <div class="plano-informacao">
-        <h1>Plano Azul</h1>
-        <hr>
-        <ul>
-          <li>A partir de 60 reais</li>
-          <li>3x na semana</li>
-          <li>3 acompanhantes no mês</li>
-        </ul>
-        <a href="#" id="contrate-plano-1" class="contrate">Matricule-se</a>
-      </div>
-    </div>
-
-    <div class="plano" id="plano_2">
-      <div class="plano-informacao">
-        <h1>Plano Amarelo</h1>
-        <hr>
-        <ul>
-          <li>A partir de 75 reais</li>
-          <li>5x na semana</li>
-          <li>5 acompanhantes no mês</li>
-          <li>Cadeira de massagem gratuita uma vez no dia</li>
-          <li>Acesso ilimitado a qualquer academia da BitFit </li>
-        </ul>
-        <a href="#" id="contrate-plano-2" class="contrate">Matricule-se</a>
-      </div>
-    </div>
-  </section>
-  <form id="form-plano-2" class="form-plano">
-    <span id="close-modal">&#10005;</span>
-    <fieldset>
-      <!-- <legend>Desculpe, estamos passando por manutenção em todas as academias, logo quando voltarmos avisaremos você :)</legend> -->
-      <legend>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</legend>
-      <label for="nome">
-        <i class="fas fa-user"></i>
-        <input type="text" placeholder="Nome" name="nome" id="nome"></label>
-
-      <label for="email">
-        <i class="fas fa-envelope"></i>
-        <input type="email" placeholder="E-mail" name="email" id="email">
-      </label>
-
-      <select name="select-unidade" id="select-unidade">
-        <option value="0" disabled selected>Escolha uma unidade</option>
-        <option value="1">Mongaguá</option>
-        <option value="2">Itanhaém</option>
-        <option value="3">São Paulo</option>
-        <option value="4">Praia Grande</option>
-      </select>
-
-      <select name="select-plano" id="select-plano">
-        <option value="0" disabled selected>Escolha um plano</option>
-        <option value="1">Plano Azul</option>
-        <option value="2">Plano Amarelo</option>
-      </select>
-      <button id="enviar-form">Enviar</button>
-    </fieldset>
-    <div id="success">
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-      <div class="check">
-        <div class="checks">
-          <div class="check-left"></div>
-          <div class="check-right"></div>
+        <div class="informacoes">
+          <h2>Mongaguá</h2>
+          <table>
+            <tr>
+              <th rowspan="2"><i class="far fa-clock"></i></th>
+              <th>Segunda à Sexta</th>
+              <th>Sábado</th>
+              <th>Domingo e Feriados</th>
+            </tr>
+            <tr>
+              <td>6H - 23H59</td>
+              <td>9H - 18H</td>
+              <td>10H - 16H</td>
+            </tr>
+          </table>
+          <div class="endereco">
+            <p>
+              <i class="fas fa-map-marked-alt"></i> Avenida Marina, 5000 -
+              Centro
+            </p>
+            <p>Mongaguá, SP - 11730-000</p>
+          </div>
+          <p>
+            <i style="color: green;" class="fab fa-whatsapp"></i> (13)
+            12345-6789
+          </p>
         </div>
       </div>
-    </div>
-  </form>
 
-  <footer>
-    <img src="resources/img/wake-logo.webp" alt="Logo Wake">
-    <img src="resources/img/gym-logo.png" alt="Logo Gym">
-    <img src="resources/img/snack-logo.png" alt="Logo Wake">
-    <img src="resources/img/shake-logo.png" alt="Logo Snack">
-    <img src="resources/img/clothing-logo.png" alt="Logo Clothes">
-    <div>
-      <p><i class="fas fa-envelope"></i> bitfit@contato.com.br</p>
-      <p>&copy; 2020 Bruno Brasolin</p>
-    </div>
-  </footer>
-  <!-- <script src="assets/js/jquery.js"></script> -->
-  <script src="public/js/main-min.js"></script>
-</body>
+      <div class="unidade" id="itanhaem">
+        <div class="imagem">
+          <img
+            class="imagem_unidade"
+            src="img/itanhaem.jpg"
+            alt="Academia de Itanhaém"
+          />
+        </div>
+        <div class="informacoes">
+          <h2>Itanhaém</h2>
+          <table>
+            <tr>
+              <th rowspan="2"><i class="far fa-clock"></i></th>
+              <th>Segunda à Sexta</th>
+              <th>Sábado</th>
+              <th>Domingo e Feriados</th>
+            </tr>
+            <tr>
+              <td>24 HORAS</td>
+              <td>9H - 18H</td>
+              <td>10H - 16H</td>
+            </tr>
+          </table>
+          <div class="endereco">
+            <p>
+              <i class="fas fa-map-marked-alt"></i> Avenida Rui Barbosa, 300 -
+              Centro
+            </p>
+            <p>Itanhaém, SP - 11740-000</p>
+          </div>
+          <p>
+            <i style="color: green;" class="fab fa-whatsapp"></i> (13)
+            12345-6789
+          </p>
+        </div>
+      </div>
 
+      <div class="unidade" id="sao-paulo">
+        <div class="imagem">
+          <img
+            class="imagem_unidade"
+            src="img/sao-paulo.jpg"
+            alt="Academia de Itanhaém"
+          />
+        </div>
+        <div class="informacoes">
+          <h2>São Paulo</h2>
+          <table>
+            <tr>
+              <th rowspan="2"><i class="far fa-clock"></i></th>
+              <th>Segunda à Sexta</th>
+              <th>Sábado</th>
+              <th>Domingo e Feriados</th>
+            </tr>
+            <tr>
+              <td>24 HORAS</td>
+              <td>9H - 18H</td>
+              <td>10H - 16H</td>
+            </tr>
+          </table>
+          <div class="endereco">
+            <p>
+              <i class="fas fa-map-marked-alt"></i> Rua Domingos de Morais, 908
+              - Vila Mariana
+            </p>
+            <p>São Paulo - SP, 04010-100</p>
+          </div>
+          <p>
+            <i style="color: green;" class="fab fa-whatsapp"></i> (13)
+            12345-6789
+          </p>
+        </div>
+      </div>
+
+      <div class="unidade" id="praia-grande">
+        <div class="imagem">
+          <img
+            class="imagem_unidade"
+            src="img/praia-grande.jpg"
+            alt="Academia de Itanhaém"
+          />
+        </div>
+        <div class="informacoes">
+          <h2>Praia Grande</h2>
+          <table>
+            <tr>
+              <th rowspan="2"><i class="far fa-clock"></i></th>
+              <th>Segunda à Sexta</th>
+              <th>Sábado</th>
+              <th>Domingo e Feriados</th>
+            </tr>
+            <tr>
+              <td>24 HORAS</td>
+              <td>9H - 18H</td>
+              <td>10H - 16H</td>
+            </tr>
+          </table>
+          <div class="endereco">
+            <p>
+              <i class="fas fa-map-marked-alt"></i> Avenida Presidente Costa e
+              Silva, 808 - Boqueirão
+            </p>
+            <p>Praia Grande - SP, 11700-005</p>
+          </div>
+          <p>
+            <i style="color: green;" class="fab fa-whatsapp"></i> (13)
+            12345-6789
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <img src="img/wake-logo.webp" alt="Logo Wake" />
+      <img src="img/gym-logo.png" alt="Logo Gym" />
+      <img src="img/snack-logo.png" alt="Logo Wake" />
+      <img src="img/shake-logo.png" alt="Logo Snack" />
+      <img src="img/clothing-logo.png" alt="Logo Clothes" />
+      <div>
+        <p><i class="fas fa-envelope"></i> bitfit@contato.com.br</p>
+        <p>&copy; 2020 Bruno Brasolin</p>
+      </div>
+    </footer>
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/libs/all.js"></script>
+    <script src="js/menu-btn.js"></script>
+  </body>
 </html>

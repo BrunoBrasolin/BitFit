@@ -1,2 +1,3 @@
 # BitFit
-Just a front-end only project to exercise ***SCSS***, ***FLEXBOX*** and ***CSS ANIMATIONS***.
+
+This project was created so I can train my CSS/SCSS abilities, like flexbox, animation and design
